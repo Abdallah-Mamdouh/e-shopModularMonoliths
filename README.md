@@ -100,16 +100,6 @@ The project also covers **cross-cutting concerns** like logging, validation, cac
 * **Keycloak** for authentication & authorization
 * **Docker & Docker-compose** for local development
 
-## 🏃‍♂️ Getting Started
-
-### Prerequisites
-
-* [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-* PostgreSQL
-* Redis
-* Docker & Docker-compose
-* RabbitMQ
-
 ## 📦 Implemented Patterns
 
 * Proxy / Decorator / Cache-aside
