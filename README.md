@@ -1,7 +1,6 @@
 # e-Shop Modular Monolith
 
 [![.NET](https://img.shields.io/badge/.NET-8-blue)](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-[![C#](https://img.shields.io/badge/C%23-12-blueviolet)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
 ## 🚀 Overview
 
