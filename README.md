@@ -130,5 +130,4 @@ The project also covers **cross-cutting concerns** like logging, validation, cac
 * [CQRS & MediatR](https://github.com/jbogard/MediatR)
 * [Outbox Pattern](https://microservices.io/patterns/data/transactional-outbox.html)
 * [Keycloak Documentation](https://www.keycloak.org/documentation)
-* 
-تحب أجهزه لك؟
+  
