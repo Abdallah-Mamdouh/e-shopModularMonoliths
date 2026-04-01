@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Data;
 
 namespace Catalog
 {
@@ -26,6 +27,15 @@ namespace Catalog
 
         public static IApplicationBuilder UseCatalogModule (this IApplicationBuilder app)
         {
+            // Configure the HTTP request pipeline.
+
+            // Use Api endpoint services
+
+            // Use Application use case services
+
+            // Use Data - infrastructure services
+            app.UseMigration<CatalogDbContext>();
+
             return app;
         }
     }
