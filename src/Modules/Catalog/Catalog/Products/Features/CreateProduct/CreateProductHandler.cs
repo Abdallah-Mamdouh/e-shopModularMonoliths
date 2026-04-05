@@ -24,11 +24,11 @@
         {
             var product = Product.Create(
                 Guid.NewGuid(),
-                productDto.name,
-                productDto.categories,
-                productDto.description,
-                productDto.imageFile,
-                productDto.price
+                productDto.Name,
+                productDto.Categories,
+                productDto.Description,
+                productDto.ImageFile,
+                productDto.Price
             );
 
             return product;
