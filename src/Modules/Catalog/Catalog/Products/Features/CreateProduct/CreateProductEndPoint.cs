@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-
-namespace Catalog.Products.Features.CreateProduct
+﻿namespace Catalog.Products.Features.CreateProduct
 {
     public record CreateProductRequets(ProductDto Product);
     public record CreateProductResponse(Guid Id);
