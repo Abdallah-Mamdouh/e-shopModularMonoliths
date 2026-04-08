@@ -1,7 +1,4 @@
-﻿
-using Catalog.Products.Features.UpdateProduct;
-
-namespace Catalog.Products.Features.DeleteProduct
+﻿namespace Catalog.Products.Features.DeleteProduct
 {
     //public record DeleteProductRequest(Guid Id);
     public record DeleteProductResponse(bool IsSuccess);

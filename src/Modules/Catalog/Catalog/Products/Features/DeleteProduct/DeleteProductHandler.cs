@@ -1,8 +1,4 @@
-﻿
-using Catalog.Products.Features.UpdateProduct;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-
-namespace Catalog.Products.Features.DeleteProduct
+﻿namespace Catalog.Products.Features.DeleteProduct
 {
     public record DeleteProductCommand(Guid ProductId) : ICommand<DeleteProductResult>;
 
@@ -29,7 +25,7 @@ namespace Catalog.Products.Features.DeleteProduct
 
             if (product is null)
             {
-                throw new Exception($"Product not found :{command.ProductId}");
+                throw new ProductNotFoundExcption(command.ProductId);
             }
 
             catalogDbContext.Remove(product);

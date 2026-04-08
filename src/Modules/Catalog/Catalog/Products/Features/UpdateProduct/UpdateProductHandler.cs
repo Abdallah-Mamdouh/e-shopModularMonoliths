@@ -27,7 +27,7 @@
 
             if (product is null)
             {
-                throw new Exception($"Product not found :{command.Product.Id}");
+                throw new ProductNotFoundExcption(command.Product.Id);
             }
 
             UpdateProductWithNewValue(product, command.Product);

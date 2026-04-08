@@ -16,7 +16,7 @@
 
             if (product is null)
             {
-                throw new Exception($"Product not found :{query.ProductId}");
+                throw new ProductNotFoundExcption(query.ProductId);
             }
 
             var productDto = product.Adapt<ProductDto>();

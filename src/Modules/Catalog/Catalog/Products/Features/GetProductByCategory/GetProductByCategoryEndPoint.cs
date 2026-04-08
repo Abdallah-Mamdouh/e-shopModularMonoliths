@@ -1,7 +1,4 @@
-﻿
-using Catalog.Products.Features.GetProductById;
-
-namespace Catalog.Products.Features.GetProductByCategory
+﻿namespace Catalog.Products.Features.GetProductByCategory
 {
     //public record GetProductByCategoryRequest();
     public record GetProductByCategoryResponse(IEnumerable<ProductDto> Products);

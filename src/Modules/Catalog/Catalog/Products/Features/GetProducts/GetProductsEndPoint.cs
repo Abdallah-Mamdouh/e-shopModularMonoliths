@@ -1,7 +1,4 @@
-﻿
-using Catalog.Products.Features.CreateProduct;
-
-namespace Catalog.Products.Features.GetProducts
+﻿namespace Catalog.Products.Features.GetProducts
 {
     //public record GetProductsRequest();
     public record GetProductsResponse(IEnumerable<ProductDto> Products);
