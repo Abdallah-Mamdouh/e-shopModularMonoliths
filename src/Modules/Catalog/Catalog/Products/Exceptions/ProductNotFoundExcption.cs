@@ -1,9 +1,6 @@
 ﻿namespace Catalog.Products.Exceptions
 {
-    public class ProductNotFoundExcption : NotFoundException
+    public class ProductNotFoundExcption(Guid id) : NotFoundException("Product", id)
     {
-        public ProductNotFoundExcption(Guid id) : base("Product", id)
-        {
-        }
     }
 }
