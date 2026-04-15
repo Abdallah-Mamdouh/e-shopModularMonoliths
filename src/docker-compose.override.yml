@@ -20,4 +20,8 @@ services:
      ports:
         - "5341:5341"
         - "9091:80"
-   
+  distributedCache:
+      container_name: distributedCache
+      restart: always
+      ports:
+        - "6379:6379"
