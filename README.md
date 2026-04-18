@@ -124,12 +124,3 @@ It showcases how to build a **maintainable, modular, and extensible system** usi
 - Notification System
 - Observability (Logging, Metrics, Tracing)
 
----
-
-## 📚 References
-
-- Vertical Slice Architecture
-- Domain-Driven Design (DDD)
-- CQRS & MediatR
-- Outbox Pattern
-- Keycloak Documentation
