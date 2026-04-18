@@ -1,5 +1,4 @@
 🚀 e-Shop Modular Monolith (.NET 8)
-📌 Overview
 
 This repository implements a production-oriented backend system built with .NET 8 and ASP.NET Core Minimal APIs, designed to demonstrate modern backend architecture patterns and scalable system design principles.
 
