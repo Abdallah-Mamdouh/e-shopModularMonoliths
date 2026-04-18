@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Basket\EventHandlers\**" />
+    <EmbeddedResource Remove="Basket\EventHandlers\**" />
+    <None Remove="Basket\EventHandlers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Shared\Shared\Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Basket\EventHandlers\" />
     <Folder Include="Basket\Features\CheckOutBasket\" />
     <Folder Include="Basket\Features\UpdateItemPriceInBasket\" />
   </ItemGroup>
