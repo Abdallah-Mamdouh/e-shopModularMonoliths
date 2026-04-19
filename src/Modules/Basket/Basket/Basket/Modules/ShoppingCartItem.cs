@@ -34,5 +34,11 @@ namespace Basket.Basket.Modules
             Price = price;
             ProductName = productName;
         }
+
+        public void UpdatePrice(decimal newPrice)
+        {
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(newPrice);
+            Price = newPrice;
+        }
     }
 }

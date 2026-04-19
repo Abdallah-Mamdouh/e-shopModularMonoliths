@@ -23,6 +23,12 @@ builder.Services
         catalogAssembly,
         basketAssembly);
 
+builder.Services
+    .AddMassTransitWithAssemblies(
+        builder.Configuration,
+        catalogAssembly,
+        basketAssembly);
+
 // modules services
 builder.Services
     .AddCatalogModule(builder.Configuration)

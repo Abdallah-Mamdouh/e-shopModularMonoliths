@@ -20,3 +20,5 @@ global using Microsoft.AspNetCore.Http;
 global using FluentValidation;
 global using Shared.Exceptions;
 global using Catalog.Products.Exceptions;
+global using MassTransit;
+global using Shared.Messagaing.Events;
