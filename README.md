@@ -1,4 +1,4 @@
-# 🚀 e-Shop Modular Monolith (.NET 8)
+# 🚀 Modular Monolith Starter (.NET 8)
 
 ## 📌 Overview
 
