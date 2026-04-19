@@ -2,11 +2,13 @@
 
 ## 📌 Overview
 
-This repository implements a **production-oriented backend system** built with .NET 8 and ASP.NET Core Minimal APIs.  
+This repository implements a production-oriented backend system built with .NET 8 and ASP.NET Core Minimal APIs.
 
 The project focuses on demonstrating modern backend architecture, scalability principles, and clean system design rather than feature completeness.
 
-It showcases how to build a **maintainable, modular, and extensible system** using real-world architectural patterns.
+It is designed as a **modular architecture starter foundation**, intended to be used as a baseline for building real-world scalable backend systems without starting from scratch.
+
+It showcases how to build a maintainable, modular, and extensible system using real-world architectural patterns.
 
 ---
 
@@ -124,12 +126,3 @@ It showcases how to build a **maintainable, modular, and extensible system** usi
 - Notification System
 - Observability (Logging, Metrics, Tracing)
 
----
-
-## 📚 References
-
-- Vertical Slice Architecture
-- Domain-Driven Design (DDD)
-- CQRS & MediatR
-- Outbox Pattern
-- Keycloak Documentation
