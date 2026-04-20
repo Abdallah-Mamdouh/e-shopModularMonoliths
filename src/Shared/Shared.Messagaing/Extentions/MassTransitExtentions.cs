@@ -21,6 +21,11 @@ namespace Shared.Messagaing.Extentions
                 config.AddSagaStateMachines(assemblies);
                 config.AddSagas(assemblies);
                 config.AddActivities(assemblies);
+
+                config.UsingInMemory((context, configuration) =>
+                {
+                    configuration.ConfigureEndpoints(context);
+                });
             });
 
             return services;
