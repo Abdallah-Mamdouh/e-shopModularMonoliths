@@ -94,7 +94,7 @@ It showcases how to build a maintainable, modular, and extensible system using r
 
 ## Tech Stack
 
-- .NET 8 / C# 12
+- .NET 8
 - ASP.NET Core Minimal APIs
 - Entity Framework Core + PostgreSQL
 - MediatR (CQRS & Domain Events)
