@@ -1,128 +1,85 @@
-# Modular Monolith Starter
+# Modular Monolith Starter (.NET 8)
+
+A production-ready backend architecture starter built with modern .NET technologies and best practices.
 
 ## Overview
 
-This repository implements a production-oriented backend system built with .NET 8 and ASP.NET Core Minimal APIs.
+This project demonstrates how to build a scalable, maintainable backend system using a **Modular Monolith architecture**.
 
-The project focuses on demonstrating modern backend architecture, scalability principles, and clean system design rather than feature completeness.
+It is designed as a **real-world foundation** that can evolve into microservices without requiring a complete rewrite.
 
-It is designed as a **modular architecture starter foundation**, intended to be used as a baseline for building real-world scalable backend systems without starting from scratch.
+## Architecture & Patterns
 
-It showcases how to build a maintainable, modular, and extensible system using real-world architectural patterns.
-
----
-
-## Architecture Overview
-
-### Core Architectural Patterns
-
-- Modular Monolith Architecture (Modulith)
+- Modular Monolith (Modulith)
 - Vertical Slice Architecture (VSA)
 - Domain-Driven Design (DDD)
 - CQRS (Command Query Responsibility Segregation)
-- Outbox Pattern for reliable messaging
-- Event-driven architecture using RabbitMQ & MassTransit
-- Secure APIs using Keycloak (OAuth2 / OpenID Connect / JWT)
-
----
-
-## Communication Patterns
-
-### Synchronous Communication
-- In-process module-to-module calls via public APIs
-
-### Asynchronous Communication
-- Event-driven messaging using RabbitMQ & MassTransit
-
----
-
-## Security
-
-- Keycloak Identity Provider
-- OAuth2 & OpenID Connect
-- JWT Bearer Authentication
-- Centralized identity management across modules
-
----
-
-## Modules
-
-### Catalog Module
-- ASP.NET Core Minimal APIs (.NET 8)
-- Vertical Slice Architecture (Feature-based structure)
-- CQRS with MediatR
-- Domain & Integration Events
-- EF Core (Code-First) with PostgreSQL
-- Validation, Logging, Exception Handling, Pagination
-
----
-
-### Basket Module
-- DDD + CQRS + Vertical Slices
-- Redis Distributed Cache
-- Cache-aside / Proxy / Decorator patterns
-- Publishes `BasketCheckoutEvent` via RabbitMQ
-- Outbox Pattern for reliable messaging
-
----
-
-### Identity Module
-- Keycloak integration for authentication & authorization
-- OAuth2 / OpenID Connect flows
-- Docker-based Keycloak setup
-- Secures all modules using JWT Bearer tokens
-
----
-
-### Ordering Module
-- Handles checkout workflow
-- DDD + CQRS + Vertical Slice Architecture
-- Outbox Pattern for reliable event processing
-- Event-driven integration with other modules
-
----
-
-## Cross-Cutting Concerns
-
-- Logging: Serilog  
-- Validation: MediatR Pipeline Behaviors  
-- Exception Handling  
-- Caching: Redis  
-- Pagination support  
-
----
+- Event-Driven Architecture
+- Outbox Pattern (Reliable Messaging)
 
 ## Tech Stack
 
 - .NET 8
 - ASP.NET Core Minimal APIs
 - Entity Framework Core + PostgreSQL
-- MediatR (CQRS & Domain Events)
+- MediatR
 - Redis (Distributed Caching)
 - RabbitMQ + MassTransit
-- Keycloak (Identity & Access Management)
+- Keycloak (OAuth2 / OpenID Connect / JWT)
 - Docker & Docker Compose
 
----
+## Security
 
-## Design Patterns Used
+- Centralized authentication using Keycloak
+- OAuth2 & OpenID Connect
+- JWT Bearer Authentication
+- Secured module communication
 
-- CQRS
-- Vertical Slice Architecture
-- Domain-Driven Design (DDD)
-- Outbox Pattern
-- Proxy Pattern
-- Decorator Pattern
-- Cache-aside Pattern
-- Domain & Integration Events
+## Modules
 
----
+### Catalog
+- Product management
+- CQRS + Vertical Slices
+- EF Core + PostgreSQL
 
-## Future Improvements
+### Basket
+- Redis distributed caching
+- Cache-aside / Proxy / Decorator patterns
+- Publishes checkout events
 
-- Migration to Microservices using Strangler Fig Pattern
-- Payments Module
-- Shipping Module
-- Notification System
-- Observability (Logging, Metrics, Tracing)
+### Ordering
+- Handles checkout workflow
+- Event-driven processing
+- Outbox pattern implementation
 
+### Identity
+- Keycloak integration
+- Authentication & authorization
+- Docker-based setup
+
+## Communication
+
+### Synchronous
+- In-process module communication
+
+### Asynchronous
+- Event-driven messaging using RabbitMQ & MassTransit
+
+## Cross-Cutting Concerns
+
+- Logging (Serilog)
+- Validation (MediatR Pipeline Behaviors)
+- Exception Handling
+- Caching
+- Pagination
+
+## Getting Started
+
+### Prerequisites
+- .NET 8 SDK
+- Docker & Docker Compose
+
+### Run the project
+
+```bash
+docker-compose up --build
